@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>လျှပ်စစ်ပစ္စည်းစာရင်း</title>
+  <title>လွ်ပ္စစ္ပစၥည္းစာရင္း</title>
 </head>
 
 <body>
-  <h1>လျှပ်စစ်ပစ္စည်းစာရင်း</h1>
+  <h1>လွ်ပ္စစ္ပစၥည္းစာရင္း</h1>
 
-  <input id="name" placeholder="ပစ္စည်းအမည်">
-  <input id="qty" type="number" placeholder="အရေအတွက်">
+  <input id="name" placeholder="ပစၥည္းအမည္">
+  <input id="qty" type="number" placeholder="အေရအတြက္">
 
-  <button onclick="addProduct()">ပစ္စည်းထည့်မည်</button>
+  <button onclick="addProduct()">ပစၥည္းထည့္မည္</button>
 
   <div id="result"></div>
 
@@ -21,7 +21,7 @@
       "https://vhuduxqydtijzojknwoe.supabase.co";
 
     const SUPABASE_KEY =
-      "ဒီနေရာမှာ သင့် Publishable Key ထည့်ပါ";
+      "ဒီေနရာမွာ သင့္ Publishable Key ထည့္ပါ";
 
     async function addProduct() {
       const name = document.getElementById("name").value;
@@ -46,10 +46,10 @@
 
       if (response.ok) {
         document.getElementById("result").innerText =
-          "ပစ္စည်းထည့်ပြီးပါပြီ ✅";
+          "ပစၥည္းထည့္ၿပီးပါၿပီ ";
       } else {
         document.getElementById("result").innerText =
-          "Error ဖြစ်နေပါတယ် ❌";
+          "Error ျဖစ္ေနပါတယ္ ";
       }
     }
   </script>
